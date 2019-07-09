@@ -17,7 +17,7 @@ public class TomcatServcer {
         String path=System.getProperty("user.dir")+ File.separator+"target"+ File.separator+"classes"+ File.separator+"web.xml";
         System.out.println(path);
         Tomcat tomcat = new Tomcat();
-       // tomcat.setPort(9000);
+      tomcat.setPort(9000);
 
         Host host =tomcat.getHost();
         host.setAppBase("webapps");
